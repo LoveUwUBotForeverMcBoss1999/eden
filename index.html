@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadun Nethmina - About Me</title>
+    <link rel="icon" href="https://uwubot.online/img/xiao_eden.png" type="image/png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Nadun Nethmina - About Me">
+    <meta property="og:description" content="Nadun Nethmina (aka Eden) is a 16-year-old anime enthusiast, Minecraft player, and aspiring software engineer.">
+    <meta property="og:url" content="https://yourwebsite.com/about-nadun">
+    <meta property="og:image" content="https://uwubot.online/img/xiao_eden.png">
+    <meta property="og:site_name" content="Eden's Corner">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #433878;
+            color: #FFE1FF;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 2rem;
+            background-color: rgba(126, 96, 191, 0.3);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(228, 177, 240, 0.5);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg at 50% 50%, #433878, #7E60BF, #E4B1F0, #FFE1FF, #433878);
+            animation: rotate 20s linear infinite;
+            z-index: -1;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            inset: 5px;
+            background: rgba(67, 56, 120, 0.9);
+            border-radius: 15px;
+            z-index: -1;
+        }
+
+        @keyframes rotate {
+            100% { transform: rotate(360deg); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: #E4B1F0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: block;
+            border: 4px solid #E4B1F0;
+            box-shadow: 0 0 20px rgba(228, 177, 240, 0.8);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #E4B1F0;
+            font-weight: bold;
+        }
+
+        .background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(45deg, #433878, #7E60BF, #E4B1F0, #FFE1FF);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glitch {
+            position: relative;
+        }
+
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 #E4B1F0;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 5s infinite linear alternate-reverse;
+        }
+
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 #FFE1FF;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 5s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-anim {
+            0% { clip: rect(50px, 9999px, 68px, 0); }
+            5% { clip: rect(80px, 9999px, 41px, 0); }
+            10% { clip: rect(26px, 9999px, 64px, 0); }
+            15% { clip: rect(48px, 9999px, 33px, 0); }
+            20% { clip: rect(12px, 9999px, 89px, 0); }
+            25% { clip: rect(76px, 9999px, 25px, 0); }
+            30% { clip: rect(69px, 9999px, 37px, 0); }
+            35% { clip: rect(95px, 9999px, 18px, 0); }
+            40% { clip: rect(14px, 9999px, 58px, 0); }
+            45% { clip: rect(83px, 9999px, 72px, 0); }
+            50% { clip: rect(31px, 9999px, 49px, 0); }
+            55% { clip: rect(57px, 9999px, 86px, 0); }
+            60% { clip: rect(92px, 9999px, 23px, 0); }
+            65% { clip: rect(40px, 9999px, 77px, 0); }
+            70% { clip: rect(65px, 9999px, 55px, 0); }
+            75% { clip: rect(29px, 9999px, 82px, 0); }
+            80% { clip: rect(74px, 9999px, 39px, 0); }
+            85% { clip: rect(88px, 9999px, 16px, 0); }
+            90% { clip: rect(52px, 9999px, 91px, 0); }
+            95% { clip: rect(21px, 9999px, 67px, 0); }
+            100% { clip: rect(35px, 9999px, 43px, 0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <img src="https://uwubot.online/img/xiao_eden.png" alt="Nadun Nethmina" class="profile-pic">
+        <h1 class="glitch" data-text="Nadun Nethmina">Nadun Nethmina</h1>
+        <p>Hey, I'm <span class="highlight">Nadun Nethmina</span>, but most people know me as <span class="highlight">Eden</span>. At 16 years old (2024), I'm not just another student facing my O/L exams—I'm a full-on <span class="highlight">anime, manga, and donghua fanatic</span>. I get lost in those worlds, whether it's epic battles or heartwarming stories.</p>
+        <p>When I'm not binging my favorite series, you'll probably find me in the blocky universe of <span class="highlight">Minecraft</span>, where I can unleash my creativity and explore limitless possibilities. My ultimate goal? To turn my passion for tech into reality as a <span class="highlight">software engineer</span>, shaping the digital future with my own hands.</p>
+        <p>But that's not all. I'm also a <span class="highlight">freelancer and a trader</span>, always hustling online, seeking opportunities to grow and learn more about the world of business. My friends? They're like my second family. Whether it's gaming marathons, deep chats, or just being the one they can count on, I'm always there to lend a hand. Helping and hanging out with my crew isn't just what I do; it's a big part of who I am.</p>
+    </div>
+</body>
+</html>
